@@ -54,31 +54,31 @@ router.get("/transfer", (req, res) => {
 
 router.post("/transfer", async (req, res) => {
   try {
-    myAccount = req.body.senderId;
-    clientAccount = req.body.recieverId;
+    myAccount = req.body.senderName;
+    clientAccount = req.body.receiverName;
     transferBal = req.body.amount;
     const transferBalAmt = parseInt(transferBal);
-    const firstUser = await Customer.findOne({ name: myAccount });
-    console.log(firstUser);
-    const secondUser = await Customer.findOne({ name: clientAccount });
-    const thirdOne = parseInt(secondUser.Amount) + parseInt(transferBal); //Updating Successfully
-    const fourthOne = parseInt(firstUser.Amount) - parseInt(transferBal);
-    console.log(thirdOne);
-    console.log(fourthOne);
-    await Customer.findOneAndUpdate(
+    const firstUser = await customer.findOne({ name: myAccount });
+    // console.log(firstUser);
+    const secondUser = await customer.findOne({ name: clientAccount });
+    const thirdOne = parseInt(secondUser.amount) + parseInt(transferBal); //Updating Successfully
+    const fourthOne = parseInt(firstUser.amount) - parseInt(transferBal);
+    // console.log(thirdOne);
+    // console.log(fourthOne);
+    await customer.findOneAndUpdate(
       { name: clientAccount },
-      { Amount: thirdOne }
+      { amount: thirdOne }
     );
-    await Customer.findOneAndUpdate({ name: myAccount }, { Amount: fourthOne });
+    await customer.findOneAndUpdate({ name: myAccount }, { amount: fourthOne });
 
-    await Transaction.create({
-      sendername: firstUser.name,
+    await transaction.create({
+      sender: firstUser.name,
+      receiver: secondUser.name,
       amount: transferBalAmt,
-      receivername: secondUser.name,
     });
     res.redirect("/customers");
   } catch (error) {
-    res.status(404).send(error);
+    console.log(error);
   }
 });
 
