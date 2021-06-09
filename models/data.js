@@ -1,62 +1,62 @@
 const customer = require("../models/customer");
 
 const c1 = new customer({
-  name: "Rajat",
-  email: "rajat52co@gmail.com",
+  name: "Varun",
+  email: "varun_45@gmail.com",
   amount: 50000,
 });
 
 const c2 = new customer({
   name: "Tanmay",
-  email: "tanmayAr@gmail.com",
+  email: "tanmay33@gmail.com",
   amount: 100000,
 });
 
 const c3 = new customer({
-  name: "Shivani",
-  email: "shivanisingh@yahoo.com",
+  name: "Yashit",
+  email: "yashitkr@yahoo.com",
   amount: 12000,
 });
 
 const c4 = new customer({
-  name: "Mohit",
-  email: "mohitco19@hotmail.com",
+  name: "Rishabh",
+  email: "rishabhco19@hotmail.com",
   amount: 40000,
 });
 
 const c5 = new customer({
   name: "Amrita",
-  email: "amk2003@gmail.com",
+  email: "amk2002@gmail.com",
   amount: 7000,
 });
 
 const c6 = new customer({
-  name: "Nitya",
-  email: "nitya_9034@yahoo.com",
+  name: "Disha",
+  email: "disha_9034@yahoo.com",
   amount: 90000,
 });
 
 const c7 = new customer({
   name: "Rohit",
-  email: "rohittgup9co@gmail.com",
+  email: "rohit@gmail.com",
   amount: 50000,
 });
 
 const c8 = new customer({
-  name: "Aman Dev",
-  email: "aman_dev55co@gmail.com",
+  name: "Ritesh",
+  email: "ritesh_55@gmail.com",
   amount: 15000,
 });
 
 const c9 = new customer({
-  name: "Kritika",
-  email: "krit52co@gmail.com",
+  name: "Anjali",
+  email: "anjali_24@gmail.com",
   amount: 500000,
 });
 
 const c10 = new customer({
-  name: "Nitin",
-  email: "bankar75@gmail.com",
+  name: "Naveen",
+  email: "naveenydv75@gmail.com",
   amount: 10000,
 });
 
