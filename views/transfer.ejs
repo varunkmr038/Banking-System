@@ -1,0 +1,31 @@
+<%- include('partials/header') -%>
+
+  <style>
+    body {
+      background-color: #f9ecf4;
+    }
+  </style>
+
+
+  <div class="container my-5">
+    <%- include('partials/messages') -%>
+
+      <h1 class="text-center mb-4 my-5" style="color: #069090">Transfer Money</h1>
+
+      <form class="my-2 w-50 m-auto my-5" method="POST">
+        <div class="form-group my-4">
+          <input type="text" class="form-control fw-bold" name="senderName" placeholder="Enter Sender's Name">
+        </div>
+        <div class="form-group my-4">
+          <input type="text" class="form-control fw-bold" name="receiverName" placeholder="Enter Receiver's Name">
+        </div>
+        <div class="form-group my-4">
+          <input type="number" class="form-control fw-bold" name="amount" placeholder="Enter Amount">
+        </div>
+
+
+        <button type="submit" class="btn btn-warning w-100 fw-bold">Transfer</button>
+      </form>
+
+  </div>
+  <%- include('partials/footer') -%>

@@ -1,0 +1,37 @@
+<%- include('partials/header') -%>
+
+  <div class=" container">
+    <div class="row intro py-1 " style="background-color : #a2f4ff;border-radius: 75px; ">
+      <div class="col-sm-12 col-md">
+        <div class="heading text-center my-5 ms-5">
+          <h3 class="fw-bold">Welcome to</h3>
+          <h1 class="mt-3">SPARKS BANK</h1>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md img">
+        <img src="img/bank.png" class="img-fluid ps-5" width="60%">
+      </div>
+
+    </div>
+
+    <div class="row activity text-center mt-3">
+      <div class="col-md act">
+        <img src="img/user.jpg" class="img-fluid">
+        <br>
+        <a href="/customers"><button style="background-color : #18b112; ">View all Customers</button></a>
+      </div>
+      <div class="col-md act">
+        <img src="img/transfer.jpg" class="img-fluid">
+        <br>
+        <a href="/transfer"><button style="background-color : #18b112;">Make a Transaction</button></a>
+      </div>
+      <div class="col-md act">
+        <img src="img/history.jpg" class="img-fluid">
+        <br>
+        <a href="/transferhistory"><button style="background-color : #18b112;">Transaction
+            History</button></a>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer') -%>

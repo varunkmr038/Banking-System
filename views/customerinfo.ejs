@@ -1,0 +1,37 @@
+<%- include("partials/header"); -%>
+    <style>
+        body {
+            background-color: #f5ffb5;
+        }
+    </style>
+
+    <div class="customer-information">
+        <div class="container">
+            <div class="customer-information-inner">
+                <div class="card-title welcoming" style="color: #138605">
+                    <h1 class="text-center my-5 fw-bold">
+                        <%= customer.name %>'s Info
+                    </h1>
+                </div>
+
+
+                <div class="card m-auto" style="width: 18rem;">
+                    <img src="/img/customer.jpg" alt="Card image cap" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bolder">
+                            <%= customer.name %>
+                        </h5>
+                        <p class="card-text fw-bold">Email: <%= customer.email %>
+                        </p>
+                        <p class="card-text fw-bold"> Amount: <%= customer.amount %>
+                        </p>
+                        <a href="/transfer" class="btn btn-warning w-100">Transfer Money</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include("partials/footer"); -%>

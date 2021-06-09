@@ -1,0 +1,56 @@
+<%- include('partials/header') -%>
+
+    <style>
+        body {
+            background-color: #bbf7cc;
+        }
+    </style>
+
+    <div class="container my-5">
+
+        <h1 class="text-center mb-4" style="color: #1b26ad;">Transfer History</h1>
+
+
+
+    </div>
+
+
+
+
+    <div class="container my-5">
+        <table class="table table-striped table-danger m-auto" width="80%">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">SENDER'S NAME</th>
+                    <th scope="col">RECEIVER'S NAME</th>
+                    <th scope="col">AMOUNT TRANSFERRED</th>
+                </tr>
+            </thead>
+            <tbody class='fw-bold'>
+                <% transferList.forEach(function(transfer){%>
+                    <tr class="d1">
+                        <td>
+                            <%= transfer.sendername %>
+                        </td>
+                        <td>
+                            <%= transfer.receivername %>
+                        </td>
+                        <td>
+                            <%= transfer.amount %>
+                        </td>
+                    </tr>
+                    <% }) %>
+
+
+
+
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+    <%- include('partials/footer') -%>
