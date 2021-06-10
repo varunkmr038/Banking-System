@@ -1,21 +1,23 @@
-# Employee Database Management System     <img align="center" width="60" height="50" src="public/img/icon.jpg">
-## An easy to use Employee Management System Website which help Administrator to manage and keep track of Employees. 
-* ### The Website performs all the CRUD (Create Read Update Delete) operations on Employees Data.
-* ### Admin can search Employee Data in database.
-* ### Site has been hosted on heroku and database is connected to mongoDB atlas.
-* ### Added User authentication using passport.js
+# Basic Banking System     <img align="center" width="60" height="50" src="public/img/icon.jpg">
+## A Simple Dynamic website in which adminstrator manages the customers accounts and transfers money . 
+ 
+- - - -
 ## :rocket: Tech Stack used: 
-- HTML
-- CSS
-- Bootstrap
-- EJS
-- Node.js
+- EJS       
+- CSS         
+- Bootstrap   
+- Node.js  
 - Express.js
-- MongoDB
-- Mongoose
-- Passport.js
+- MongoDB database
+
+
+
+
+
  
 
 
-## [Live Site](https://emp-manage-sys.herokuapp.com/)
-https://emp-manage-sys.herokuapp.com/
+## [Live Site](https://sparks-foundationbank.herokuapp.com/)
+https://sparks-foundationbank.herokuapp.com/
+
+![home_page](https://user-images.githubusercontent.com/74452458/121528647-4d9c1580-ca19-11eb-839f-a6df4e143ce8.png)
